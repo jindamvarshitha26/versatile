@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio - Versatile IT Solutions</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #f0f9ff;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 60px;
+            background: white;
+        }
+
+        nav h1 {
+            color: #0ea5e9;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #334155;
+        }
+
+        nav a:hover {
+            color: #0ea5e9;
+        }
+
+        .portfolio {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .portfolio h2 {
+            font-size: 40px;
+            color: #0369a1;
+        }
+
+        .portfolio-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .portfolio-card {
+            background: white;
+            width: 300px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .portfolio-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .portfolio-card h3 {
+            margin: 15px 0 5px;
+        }
+
+        .portfolio-card p {
+            padding: 0 15px 20px;
+            color: #475569;
+        }
+
+        .footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <h1>VERSATILE IT SOLUTIONS</h1>
+    <div>
+        <a href="/">Home</a>
+        <a href="/portfolio">Portfolio</a>
+        <a href="/services">Services</a>
+        <a href="/contact">Contact</a>
+    </div>
+</nav>
+
+<section class="portfolio">
+    <h2>Our Portfolio</h2>
+    <p>Explore our recent work</p>
+
+    <div class="portfolio-container">
+
+        <div class="portfolio-card">
+            <img src="{{ url_for('static', filename='images/project1.jpg') }}">
+            <h3>Business Website</h3>
+            <p>Modern responsive company website</p>
+        </div>
+
+        <div class="portfolio-card">
+            <img src="{{ url_for('static', filename='images/project2.jpg') }}">
+            <h3>AI Chatbot</h3>
+            <p>Smart chatbot using AI & NLP</p>
+        </div>
+
+        <div class="portfolio-card">
+            <img src="{{ url_for('static', filename='images/project3.jpg') }}">
+            <h3>Cloud Dashboard</h3>
+            <p>Analytics dashboard using cloud</p>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <p>© 2026 Versatile IT Solutions</p>
+</footer>
+
+</body>
+</html>

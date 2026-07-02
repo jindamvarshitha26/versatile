@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Contact - Versatile IT</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: #f0f9ff;
+        color: #0f172a;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 60px;
+        background: white;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    nav h1 {
+        color: #0ea5e9;
+    }
+
+    nav a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #334155;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: #0ea5e9;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 70px 20px;
+        background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+    }
+
+    .hero h2 {
+        font-size: 38px;
+        color: #0369a1;
+    }
+
+    .hero p {
+        color: #334155;
+        margin-top: 10px;
+    }
+
+    .contact-container {
+        display: flex;
+        justify-content: center;
+        padding: 60px 20px;
+    }
+
+    .form-box {
+        background: white;
+        padding: 40px;
+        border-radius: 15px;
+        width: 400px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        text-align: center;
+    }
+
+    .form-box input,
+    .form-box textarea {
+        width: 100%;
+        margin: 12px 0;
+        padding: 12px;
+        border-radius: 8px;
+        border: 1px solid #cbd5f5;
+        outline: none;
+        font-size: 14px;
+    }
+
+    .form-box input:focus,
+    .form-box textarea:focus {
+        border-color: #0ea5e9;
+        box-shadow: 0 0 5px rgba(14,165,233,0.3);
+    }
+
+    .form-box textarea {
+        height: 120px;
+        resize: none;
+    }
+
+    .form-box button {
+        width: 100%;
+        padding: 12px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 8px;
+        background: #0ea5e9;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .form-box button:hover {
+        background: #0284c7;
+        transform: scale(1.03);
+    }
+
+    @media (max-width: 768px) {
+        nav {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .form-box {
+            width: 90%;
+        }
+    }
+</style>
+
+
+</head>
+
+<body>
+
+<nav>
+    <h1>Versatile IT</h1>
+    <div>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <h2>Contact Us</h2>
+    <p>We would love to hear from you</p>
+</section>
+
+<section class="contact-container">
+    <div class="form-box">
+
+
+    <form class="form">
+        <input type="text" placeholder="👤 Your Name" required>
+        <input type="email" placeholder="📧 Your Email" required>
+        <textarea placeholder="💬 Your Message" required></textarea>
+        <button>Send Message</button>
+    </form>
+
+</div>
+
+
+</section>
+
+</body>
+</html>

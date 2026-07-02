@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Versatile IT Solutions</title>
+
+    <!-- Flask CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #f0f9ff;
+            color: #0f172a;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        nav h1 {
+            color: #0ea5e9;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #334155;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #0ea5e9;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 120px 20px;
+            background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            color: #0369a1;
+        }
+
+        .hero button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            background: #0ea5e9;
+            color: white;
+        }
+
+        .services {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            width: 250px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+            font-size: 22px;
+        }
+
+        .social-icons a:hover {
+            color: #0ea5e9;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <h1>VERSATILE IT SOLUTIONS</h1>
+    <div>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/portfolio">Portfolio</a>
+        <a href="/gallery">Gallery</a>
+        <a href="/contact">Contact</a>
+        <a href="/login">Login</a>
+    </div>
+</nav>
+
+
+<section class="hero">
+    <h2>Innovating the Future</h2>
+    <p>We deliver cutting-edge IT solutions for your business growth</p>
+    <a href="/services"><button>Explore Services</button></a>
+</section>
+
+<section class="services">
+    <h2>Our Services</h2>
+
+    <div class="card-container">
+        <div class="card">🌐 Web Development</div>
+        <div class="card">🤖 AI & Machine Learning</div>
+        <div class="card">☁️ Cloud Computing</div>
+    </div>
+</section>
+
+<footer class="footer">
+    <h3>Versatile IT Solutions</h3>
+    <p>Connecting innovation with technology</p>
+
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/company/versatileitsol/" target="blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="https://www.instagram.com/versatileitsol/" target="blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://wa.me/9701930011" target="blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <p style="margin-top:20px;">© 2026 Versatile IT Solutions</p>
+</footer>
+
+</body>
+</html>
